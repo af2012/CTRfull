@@ -35,9 +35,9 @@ def main():
     w_pain = st.slider('Pain inference:', 0, 5, 1)
     w_uex = st.slider('UEX:', 0, 5, 1)
     w_vas = st.slider('VAS:', 0, 5, 2)
-    
-    ectr_points = w_cost*1 + w_pp*1 + w_inf*2 + w_tni*1 + w_pni*2 + w_rr*1 + w_pain*2 + w_uex*2 + w_vas*2
-    octr_points = w_cost*2 + w_pp*2 + w_inf*1 + w_tni*2 + w_pni*1 + w_rr*2 + w_pain*1 + w_uex*1 + w_vas*1
+
+    ectr_points = w_cost*1 + w_pp*1 + w_inf*2 + w_tni*1 + w_pni*2 + w_rr*1 + w_pain*1 + w_uex*2 + w_vas*2
+    octr_points = w_cost*2 + w_pp*2 + w_inf*1 + w_tni*2 + w_pni*1 + w_rr*2 + w_pain*2 + w_uex*1 + w_vas*1
     # Calculate 
     if ectr_points>octr_points:
         st.write('ECTR is a better choice by ' + str(ectr_points-octr_points) + ' points')
