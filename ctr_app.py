@@ -10,12 +10,7 @@ allan.fong@medstar.net
 """
 import streamlit as st
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
-
-path = 'C:/Users/axf162/MedStar Health/MHRI-Human Factors - Personal Files/Allan Fong/CODE/PYTHON_SCRIPTS/1_EHR/Curtis_Hand/'
-
-#data = pd.read_excel(path+'CTR_RESULTS_02.xlsx', sheet_name='features')
 
 ectr_points = 0
 octr_points = 0
