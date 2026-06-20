@@ -45,7 +45,7 @@ def main():
     st.title("Curtis National Hand Center Carpal Tunnel Decision Analysis Tool")
     st.header("Open versus Endoscopic Carpal Tunnel Release")
                        
-    st.write('Select Feature Weights (0 is not important, 5 is most important - on sliding scale)')
+    st.header('Select Feature Weights (0 is not important, 5 is most important - on sliding scale)')
 
     w_cost = st.slider('Lower cost paid by insurance:', 0, 5, 1)
     w_pp = st.slider('Lower cost paid by patient:', 0, 5, 2)
@@ -70,13 +70,13 @@ def main():
     octr_points = w_cost*2 + w_pp*2 + w_inf*1 + w_tni*2 + w_pni*1 + w_rr*2 + w_pain*2 + w_uex*1 + w_vas*1
     # Calculate 
     if ectr_points>octr_points:
-        st.write('Based on your responses, the preferred procedure for you is: ENDOSCOPIC carpal tunnel release')
+        st.header('Based on your responses, the preferred procedure for you is: ENDOSCOPIC carpal tunnel release')
         #st.write('ECTR is a better choice by ' + str(ectr_points-octr_points) + ' points')
     elif octr_points>ectr_points:
-        st.write('Based on your responses, the preferred procedure for you is: OPEN carpal tunnel release')
+        st.header('Based on your responses, the preferred procedure for you is: OPEN carpal tunnel release')
         #st.write('OCTR is a better choice by ' + str(octr_points-ectr_points) + ' points')
     else:
-        st.write('Based on your responses, ENDOSCOPIC and OPEN are equally preferred')
+        st.header('Based on your responses, ENDOSCOPIC and OPEN are equally preferred')
         #st.write('ECTR and OCTR are the same')
         
     #### Remove second iteration to simplify (6/19/26)
