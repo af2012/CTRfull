@@ -45,7 +45,7 @@ def main():
     st.title("Curtis National Hand Center Carpal Tunnel Decision Analysis Tool")
     st.header("Open versus Endoscopic Carpal Tunnel Release")
                        
-    st.header('Select Feature Weights (0 is not important, 5 is most important - on sliding scale)')
+    st.write('Select Feature Weights (0 is not important, 5 is most important - on sliding scale)')
 
     w_cost = st.slider('Lower cost paid by insurance:', 0, 5, 1)
     w_pp = st.slider('Lower cost paid by patient:', 0, 5, 2)
