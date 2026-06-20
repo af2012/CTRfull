@@ -60,25 +60,16 @@ def main():
     """, unsafe_allow_html=True)
 
     # ---- Logo ----
-    col1, col2 = st.columns([1, 5])
-
-    with col1:
-        st.image("cnhc_logo.png", width=140)
+    col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:
-        st.markdown(
-            """
-            <div class="main-title">
-            Curtis National Hand Center Carpal Tunnel Decision Analysis Tool
-            </div>
-            <div class="sub-title">
-            Open versus Endoscopic Carpal Tunnel Release
-            </div>
-            """,
-            unsafe_allow_html=True
+        st.image(
+            "cnhc_logo.png",
+            use_container_width=True
         )
 
-
+    st.title("Curtis National Hand Center Carpal Tunnel Decision Analysis Tool")
+    st.header("Open versus Endoscopic Carpal Tunnel Release")
                        
     st.write('Select Feature Weights (0 is not important, 5 is most important - on sliding scale)')
 
