@@ -30,32 +30,6 @@ def main():
     html, body, [class*="css"]  {
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    /* Slider color */
-    .stSlider [data-baseweb="slider"] div[role="slider"] {
-        background-color: navy !important;
-    }
-
-    .stSlider [data-baseweb="slider"] > div > div {
-        background-color: navy !important;
-    }
-
-    /* Header styling */
-    .main-title {
-        text-align: center;
-        color: navy;
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-bottom: 0;
-    }
-
-    .sub-title {
-        text-align: center;
-        color: #333333;
-        font-size: 1.3rem;
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
     </style>
     """, unsafe_allow_html=True)
 
