@@ -21,7 +21,7 @@ octr_cat_points = 0
 
 def main():
     st.set_page_config(layout="wide",
-                      page_title='CNHC Carpal Tunnel Decision Analysis Tool"
+                      page_title="CNHC Carpal Tunnel Decision Analysis Tool"
     )
     
     # ---- Custom Styling ----
